@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>CorBites Snack Corner</title>
+  <link rel="stylesheet" type="text/css" href="corbitesorder.css">
+  <style>
+    .form-container {
+      border: 1px solid burlywood;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .form-control {
+      border-color: burlywood;
+      resize: vertical;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav li a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<br>
+<center><b><font color="B87333" size="6">CorBites Snack Corner</font></b></center>
+<br>
+<nav>
+  <ul>
+    <li><a href="CorBitesHome.html">Home</a></li>
+    <li><a href="CorBitesAbout.html">About</a></li>
+    <li><a href="CorBitesMenu.html">Menu</a></li>
+    <li><a href="CorBitesOrder.html">Order</a></li>
+    <a href="https://www.facebook.com/corbites" class="fb"><img src="facebooklogo.png">FaceBook Page</a>
+  </ul>
+</nav>
+<br>
+<center>
+  <h2>Order Here</h2>
+</center>
+
+<div class="form-container">
+  <form action="corbitesdb1.php" method="post">
+    <div class="form-group">
+      <label for="order">Order<span style="color: red;">*</span></label>
+      <textarea class="form-control" name="order" id="order" rows="4" placeholder="Enter your orders here&#10;Ex.&#10;Java Chip Shake (1)&#10;Okinawa Milktea (2, 22 oz. 1, 16 oz.)&#10;Black Iced Coffee (1)&#10;Black Gulaman (1, 16 oz. 2, 22 oz)&#10;French Fries (Large, Sour Cream)&#10;Siomai (4)&#10;Melona (Coconut)"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name<span style="color: red;">*</span></label>
+      <input type="name" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+
+ 	<div class="form-group">
+      <label for="num">Contact Number (Ex. <i>09123456789</i>)</label>
+      <input type="num" class="form-control" name="num" id="num" placeholder="Enter your contact number">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="p_address">Address<span style="color: red;">*</span></label>
+      <input type="p_address" class="form-control" name="p_address" id="p_address" placeholder="Enter your delivery address">
+    </div>
+
+    <button type="button" class="btn btn-danger" onclick="clearInputs()">Clear all</button>
+    <button type="submit" class="btn btn-primary" name="save">Submit</button>
+  </form>
+</div>
+
+<script>
+  function clearInputs() {
+    document.getElementById('order').value = '';
+    document.getElementById('name').value = '';
+    document.getElementById('num').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('p_address').value = '';
+  }
+</script>
+
+</body>
+</html>

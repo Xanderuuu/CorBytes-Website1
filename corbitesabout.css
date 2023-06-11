@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	color: #B87333;
+	padding: 20px;
+}
+
+nav{
+	background-color: #D2B48C;
+	display: grid;
+	place-items: center;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+	transition: 0.2s ease-in;
+}
+
+nav ul a:hover{
+	background-color: #987554;
+	color: white;
+}
+
+.fb img{
+	width: 25px;
+	height: 25px;
+}
+
+a{
+	color: #B87333;
+	text-decoration: none;
+}
+
+.bgimg{
+	padding: 20px;
+	background-image: C:\Users\Xander Barce\Desktop\School Apps\Sublime Text save files\Website2\corbiteslogo2.png;
+	background-repeat: no-repeat;
+	background-position: 50% 10px;
+}
+
+.aboutus{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 17px;
+}
+
+.aboutus{
+	font-size: 26px;
+	text-align: center;
+}
